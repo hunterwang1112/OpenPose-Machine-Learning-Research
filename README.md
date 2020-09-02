@@ -1,8 +1,10 @@
 # OpenPose-Machine-Learning
 
-Apply Machine learning on the OpenPose data from Camera 2. The machine learning process uses the classifiers from the Scikit-Learn Package. For basic machine learning, the scripts are based on 8 different classifiers. For deep learning with Neural Network, the scripts are based on the MLP Classifier. Besides, I also tried different techniques, but most of them are proved not helpful. Still, these scripts are kept in this repo.
+OpenPose Machine Learning Research is part of the project to develop a video pipeline that automatically recognizes clinical procedures during emergency care and sends real-time information of patients to receiving hospitals or emregency medical services. This repository includes my work in the 2019 VUSE summer research program at [Vanderbilt University's School of Engineering](https://engineering.vanderbilt.edu). The primary investigator for the project is [Dr. Bobby Bodenheimer](https://engineering.vanderbilt.edu/bio/robert-bodenheimer), Professor at the [Department of Electrical Engineering and Computer Science](https://engineering.vanderbilt.edu/eecs/).
 
-For all the machine learning scripts, training set is data from subjects 1-6, while testing set is data from subject 7.
+The research applys various machine learning algorithms on OpenPose data collected on Camera 2 from previous experiments to find which classifier or algorithm works the best. The research mainly uses Scikit-learn, a python-based machine learning package. The first part of the research uses 8 machine learning classifiers. The second part of the research, with deep leanring, uses the MLP classifier. Besides, various techniques are used to improve the efficiency of the algorithms, but most of them are proved not helpful. Still, these scripts are kept in this repository.
+
+Subjects 1-6 are training data; subject 7 is testing data.
 
 ## Process Data
 
@@ -66,3 +68,7 @@ This script can generate extremely high testing accuracy, but this is inaccurate
 
 This script expand the feature data to larger data set which combines the frames before and after a certain frame.
 Since the dimension becomes very large, this script runs slowly, but the results show that incorporating temporal feature in this way does increase the testing accuracy.
+
+## Confusion Matrics
+
+[Confusion Matrics](Confusion%20Matrices) for PatientSpace and RawXY are generated and can be accessed in this repo.
